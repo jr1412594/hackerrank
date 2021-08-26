@@ -21,18 +21,18 @@ const scrabble = (tiles, message) => {
 
     let resultArray = messageArray.map((letter) => messageHash[letter] <= tilesHash[letter] ? true : false);
 
-    let messageHashValues = Object.values(messageHash);
-    let reducedMessageHashValues = messageHashValues.reduce((a,b) => a + b);
+    // let messageHashValues = Object.values(messageHash);
+    // let reducedMessageHashValues = messageHashValues.reduce((a,b) => a + b);
 
-    let tilesHashValues = Object.values(tilesHash);
-    let reducedTilesHashValues = tilesHashValues.reduce((a,b) => a + b);
+    // let tilesHashValues = Object.values(tilesHash);
+    // let reducedTilesHashValues = tilesHashValues.reduce((a,b) => a + b);
 
     //   console.log("TILES ARRAY: ", tilesArray);
     //   console.log("MESSAGE ARRAY: ", messageArray);
     //   console.log("TILES HASH: ", tilesHash);
     //   console.log("MESSAGE HASH: ", messageHash);
     //   console.log("MESSAGE HASH VALUES: ", messageHashValues);
-    //   console.log("TILES HASH VALUES: ", tilesHashValues);
+    // //   console.log("TILES HASH VALUES: ", tilesHashValues);
     //   console.log("REDUCED MESSAGE HASH VALUES: ", reducedMessageHashValues);
     //   console.log("REDUCED TILES HASH VALUES: ", reducedTilesHashValues);
     //   console.log("RESULT ARRAY: ", resultArray);
