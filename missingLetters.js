@@ -41,3 +41,29 @@
 // }
 
 // // console.log(program(alpha, str))
+
+// const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+// // const str = 'the quick brown fox jumped over the lazy';
+// const str = 'a';
+
+// const missingLetters = (alphabet, str) => {
+//   const alphaHash = {};
+//   
+//   for(const i of alphabet) {
+//     letter = i;
+//     alphaHash[letter] = 1;
+//   }
+
+//   for(const i of str){
+//     letter = i;
+//     alphaHash[letter] ? alphaHash[letter]-- : null
+//   }
+  
+//   let result = Object.keys(alphaHash).filter(key => alphaHash[key] === 1)
+
+//   console.log('alphaHash :', alphaHash)
+//   return result.join('')
+// }
+
+// console.log(missingLetters(alphabet, str))
