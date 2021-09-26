@@ -67,3 +67,25 @@
 // }
 
 // console.log(missingLetters(alphabet, str))
+
+// const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+// const str = 'a';
+
+const missingLetterTwo = (alphabet, str) => {
+  let strHash = {};
+  let notFound = '';
+
+  for(let i in str) {
+    letter = str[i];
+    strHash[letter] = 1;
+  };
+
+  for(let i in alphabet) {
+    alphabetLetter = alphabet[i];
+    if (!strHash[alphabetLetter]) { notFound += alphabetLetter };
+  };
+
+  return notFound;
+};
+
+console.log(missingLetterTwo(alphabet, str))
